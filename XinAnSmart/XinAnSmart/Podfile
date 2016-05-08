@@ -1,0 +1,11 @@
+xcodeproj '/Users/wangjiansheng/Desktop/XingAn/XinAnSmart/XinAnSmart.xcodeproj'
+pod 'Masonry', '~> 1.0.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDWebImage', '~> 3.7.4'
+pod 'MJExtension', '~> 3.0.7'
+pod 'MJRefresh', '~> 2.4.7'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'SDWebImage-Category', '~> 1.4'
+pod 'SDCycleScrollView', '~> 1.6'
+pod 'FMDB', '~> 2.6.2'
+
