@@ -10,5 +10,5 @@
 #import "AppDelegate.h"
 @interface XABaseViewController : UIViewController
 @property (strong, nonatomic) UIImageView *defaultImageView;
-
+@property(nonatomic,strong)UILabel *labTitle;
 @end

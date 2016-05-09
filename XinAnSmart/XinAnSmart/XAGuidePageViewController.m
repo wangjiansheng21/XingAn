@@ -4,8 +4,8 @@
 //
 //  Created by 王建生 on 16/5/3.
 //  Copyright © 2016年 xingAnTongXun. All rights reserved.
-//
-#import "LeftSortsViewController.h"
+
+#import "XALeftSlideViewController.h"
 #import "AppDelegate.h"
 #import "XAGuidePageViewController.h"
 #import "XATabBarViewController.h"
@@ -13,7 +13,6 @@
 #import "XAElectricTypeViewController.h"
 #import "XAApplicationSceneViewController.h"
 #import "XAVideoMonitoringViewController.h"
-#import "XALeftSlideViewController.h"
 @interface XAGuidePageViewController ()
 
 @end
@@ -34,14 +33,16 @@
     [self performSelector:@selector(toTabBarController) withObject:nil afterDelay:3];
 }
 -(void)toTabBarController{
-    LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
-     XATabBarViewController *tabBarViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"tabBar"];
+
+    XATabBarViewController *tabBarViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"tabBar"];
     UIApplication *application=[UIApplication sharedApplication];
     AppDelegate *delegate=application.delegate;
-   delegate.leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabBarViewController];
+    XALeftSlideViewController *leftVC=[XALeftSlideViewController new];
+    delegate.leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabBarViewController];
     [self presentViewController:delegate.leftSlideVC animated:NO completion:^{
         
     }];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

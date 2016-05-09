@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		21AAEE399F662FF37A075F0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49147386200383389ECDEC97 /* libPods.a */; };
+		B81BD3FF1CD9D9E6000C3050 /* XAMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B81BD3FD1CD9D9E6000C3050 /* XAMenuTableViewCell.m */; };
+		B81BD4001CD9D9E6000C3050 /* XAMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81BD3FE1CD9D9E6000C3050 /* XAMenuTableViewCell.xib */; };
+		B81BD4041CD9E47E000C3050 /* XAAddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81BD4021CD9E47E000C3050 /* XAAddUserViewController.m */; };
+		B81BD4051CD9E47E000C3050 /* XAAddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81BD4031CD9E47E000C3050 /* XAAddUserViewController.xib */; };
+		B81BE57F1CE0426D00ADE9AA /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = B81BE57E1CE0426D00ADE9AA /* leftbackiamge.png */; };
+		B876D3591CE08EEF00115090 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B876D3581CE08EEF00115090 /* LeftSlideViewController.m */; };
 		CD0ACE8A1CD8FB8E00CEB562 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = CD0ACE881CD8FB8E00CEB562 /* Contents.json */; };
 		CD0ACE8B1CD8FB8E00CEB562 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0ACE891CD8FB8E00CEB562 /* menu@2x.png */; };
-		CD0ACE901CD8FE0C00CEB562 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACE8D1CD8FE0C00CEB562 /* LeftSlideViewController.m */; };
 		CD0ACE911CD8FE0C00CEB562 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACE8F1CD8FE0C00CEB562 /* UIView_extra.m */; };
-		CD0ACE941CD8FE2200CEB562 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACE931CD8FE2200CEB562 /* LeftSortsViewController.m */; };
 		CD0ACE971CD913CE00CEB562 /* XALeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0ACE961CD913CE00CEB562 /* XALeftSlideViewController.m */; };
-		CD2A83E81CDE342F00CFCA73 /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2A83E71CDE342E00CFCA73 /* leftbackiamge.png */; };
 		CD4AAEB71CD8C6040057E88F /* XANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AAEB61CD8C6040057E88F /* XANavigationController.m */; };
 		CD4AAEC11CD8C7DE0057E88F /* XABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AAEC01CD8C7DE0057E88F /* XABaseViewController.m */; };
 		CD4AAEC41CD8C8160057E88F /* XAElectricTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AAEC31CD8C8160057E88F /* XAElectricTypeViewController.m */; };
@@ -310,18 +313,22 @@
 /* Begin PBXFileReference section */
 		49147386200383389ECDEC97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D64B47BFD8636397974A382 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "XinAnSmart/Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B81BD3FC1CD9D9E6000C3050 /* XAMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAMenuTableViewCell.h; sourceTree = "<group>"; };
+		B81BD3FD1CD9D9E6000C3050 /* XAMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAMenuTableViewCell.m; sourceTree = "<group>"; };
+		B81BD3FE1CD9D9E6000C3050 /* XAMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XAMenuTableViewCell.xib; sourceTree = "<group>"; };
+		B81BD4011CD9E47E000C3050 /* XAAddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAAddUserViewController.h; sourceTree = "<group>"; };
+		B81BD4021CD9E47E000C3050 /* XAAddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAAddUserViewController.m; sourceTree = "<group>"; };
+		B81BD4031CD9E47E000C3050 /* XAAddUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XAAddUserViewController.xib; sourceTree = "<group>"; };
+		B81BE57E1CE0426D00ADE9AA /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
+		B876D3571CE08EEF00115090 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		B876D3581CE08EEF00115090 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
 		BE4754B624D4EABE7F22593F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "XinAnSmart/Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0ACE881CD8FB8E00CEB562 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		CD0ACE891CD8FB8E00CEB562 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		CD0ACE8C1CD8FE0C00CEB562 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
-		CD0ACE8D1CD8FE0C00CEB562 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
 		CD0ACE8E1CD8FE0C00CEB562 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		CD0ACE8F1CD8FE0C00CEB562 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
-		CD0ACE921CD8FE2200CEB562 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
-		CD0ACE931CD8FE2200CEB562 /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
 		CD0ACE951CD913CE00CEB562 /* XALeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XALeftSlideViewController.h; sourceTree = "<group>"; };
 		CD0ACE961CD913CE00CEB562 /* XALeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XALeftSlideViewController.m; sourceTree = "<group>"; };
-		CD2A83E71CDE342E00CFCA73 /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
 		CD4AAEB51CD8C6040057E88F /* XANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XANavigationController.h; sourceTree = "<group>"; };
 		CD4AAEB61CD8C6040057E88F /* XANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XANavigationController.m; sourceTree = "<group>"; };
 		CD4AAEBF1CD8C7DE0057E88F /* XABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XABaseViewController.h; sourceTree = "<group>"; };
@@ -654,6 +661,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B81BD3F81CD9CE39000C3050 /* 菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				B81BD3FB1CD9CE94000C3050 /* view */,
+				B81BD3FA1CD9CE74000C3050 /* model */,
+				B81BD3F91CD9CE68000C3050 /* controller */,
+			);
+			name = "菜单";
+			sourceTree = "<group>";
+		};
+		B81BD3F91CD9CE68000C3050 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B876D3571CE08EEF00115090 /* LeftSlideViewController.h */,
+				B876D3581CE08EEF00115090 /* LeftSlideViewController.m */,
+				CD0ACE951CD913CE00CEB562 /* XALeftSlideViewController.h */,
+				CD0ACE961CD913CE00CEB562 /* XALeftSlideViewController.m */,
+				B81BD4011CD9E47E000C3050 /* XAAddUserViewController.h */,
+				B81BD4021CD9E47E000C3050 /* XAAddUserViewController.m */,
+				B81BD4031CD9E47E000C3050 /* XAAddUserViewController.xib */,
+				CD0ACE8E1CD8FE0C00CEB562 /* UIView_extra.h */,
+				CD0ACE8F1CD8FE0C00CEB562 /* UIView_extra.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		B81BD3FA1CD9CE74000C3050 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		B81BD3FB1CD9CE94000C3050 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B81BD3FC1CD9D9E6000C3050 /* XAMenuTableViewCell.h */,
+				B81BD3FD1CD9D9E6000C3050 /* XAMenuTableViewCell.m */,
+				B81BD3FE1CD9D9E6000C3050 /* XAMenuTableViewCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		CD0ACE871CD8FB8E00CEB562 /* menu.imageset */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,16 +767,8 @@
 		CD4AAEBE1CD8C7C30057E88F /* common */ = {
 			isa = PBXGroup;
 			children = (
-				CD0ACE921CD8FE2200CEB562 /* LeftSortsViewController.h */,
-				CD0ACE931CD8FE2200CEB562 /* LeftSortsViewController.m */,
-				CD0ACE8C1CD8FE0C00CEB562 /* LeftSlideViewController.h */,
-				CD0ACE8D1CD8FE0C00CEB562 /* LeftSlideViewController.m */,
-				CD0ACE8E1CD8FE0C00CEB562 /* UIView_extra.h */,
-				CD0ACE8F1CD8FE0C00CEB562 /* UIView_extra.m */,
 				CD4AAEBF1CD8C7DE0057E88F /* XABaseViewController.h */,
 				CD4AAEC01CD8C7DE0057E88F /* XABaseViewController.m */,
-				CD0ACE951CD913CE00CEB562 /* XALeftSlideViewController.h */,
-				CD0ACE961CD913CE00CEB562 /* XALeftSlideViewController.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -779,6 +821,7 @@
 		CD69DCA71CD87EBE0004960A /* XinAnSmart */ = {
 			isa = PBXGroup;
 			children = (
+				B81BD3F81CD9CE39000C3050 /* 菜单 */,
 				CD4AAEBE1CD8C7C30057E88F /* common */,
 				CD4AAEBA1CD8C72F0057E88F /* 视频监护 */,
 				CD4AAEB91CD8C71E0057E88F /* 应用场景 */,
@@ -823,7 +866,7 @@
 		CD69DEE31CD88A400004960A /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CD2A83E71CDE342E00CFCA73 /* leftbackiamge.png */,
+				B81BE57E1CE0426D00ADE9AA /* leftbackiamge.png */,
 				CD69E0E61CD88A990004960A /* splash.png */,
 				CD69DEE41CD88A400004960A /* about.png */,
 				CD69DEE51CD88A400004960A /* add.png */,
@@ -1247,6 +1290,7 @@
 				CD69E01C1CD88A410004960A /* cesuo.jpg in Resources */,
 				CD69E0DC1CD88A410004960A /* woshi.jpg in Resources */,
 				CD69E0A11CD88A410004960A /* question.png in Resources */,
+				B81BD4051CD9E47E000C3050 /* XAAddUserViewController.xib in Resources */,
 				CD69DFE51CD88A410004960A /* about.png in Resources */,
 				CD69E0E41CD88A410004960A /* zhengkaoji_off.png in Resources */,
 				CD69E03A1CD88A410004960A /* ch30.png in Resources */,
@@ -1290,7 +1334,6 @@
 				CD69E0D31CD88A410004960A /* view_event_disable_alert.png in Resources */,
 				CD69E0BB1CD88A410004960A /* shape.xml in Resources */,
 				CD69E0691CD88A410004960A /* huozaijc_off.png in Resources */,
-				CD2A83E81CDE342F00CFCA73 /* leftbackiamge.png in Resources */,
 				CD69E07B1CD88A410004960A /* ic_menu_search.png in Resources */,
 				CD69E0591CD88A410004960A /* error.jpg in Resources */,
 				CD69E0141CD88A410004960A /* btn_tomenu_selector.xml in Resources */,
@@ -1393,6 +1436,7 @@
 				CD69E0681CD88A410004960A /* huojin_off.jpg in Resources */,
 				CD69E05E1CD88A410004960A /* fw_disable.png in Resources */,
 				CD69E0461CD88A410004960A /* cook_low.png in Resources */,
+				B81BE57F1CE0426D00ADE9AA /* leftbackiamge.png in Resources */,
 				CD69E0981CD88A410004960A /* no_concenter.jpg in Resources */,
 				CD69E0991CD88A410004960A /* nty_alert.png in Resources */,
 				CD69E0851CD88A410004960A /* kaiguan1.jpg in Resources */,
@@ -1453,6 +1497,7 @@
 				CD69E0891CD88A410004960A /* kaiguan3.jpg in Resources */,
 				CD69DFE81CD88A410004960A /* arrow.png in Resources */,
 				CD69E04E1CD88A410004960A /* danhuo2_off.png in Resources */,
+				B81BD4001CD9D9E6000C3050 /* XAMenuTableViewCell.xib in Resources */,
 				CD69E0221CD88A410004960A /* ch06.png in Resources */,
 				CD69E0E01CD88A410004960A /* yangqion.jpg in Resources */,
 				CD69E0AA1CD88A410004960A /* recycle.png in Resources */,
@@ -1559,16 +1604,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0ACE911CD8FE0C00CEB562 /* UIView_extra.m in Sources */,
-				CD0ACE941CD8FE2200CEB562 /* LeftSortsViewController.m in Sources */,
 				CD69E0F11CD88F620004960A /* AppDelegate.m in Sources */,
-				CD0ACE901CD8FE0C00CEB562 /* LeftSlideViewController.m in Sources */,
 				CD0ACE971CD913CE00CEB562 /* XALeftSlideViewController.m in Sources */,
 				CD69E0EA1CD88B2E0004960A /* XAGuidePageViewController.m in Sources */,
 				CD4AAEC11CD8C7DE0057E88F /* XABaseViewController.m in Sources */,
 				CD4AAECC1CD8D0130057E88F /* XAApplicationSceneViewController.m in Sources */,
 				CD69DCAA1CD87EBE0004960A /* main.m in Sources */,
+				B81BD4041CD9E47E000C3050 /* XAAddUserViewController.m in Sources */,
+				B81BD3FF1CD9D9E6000C3050 /* XAMenuTableViewCell.m in Sources */,
 				CD4AAEB71CD8C6040057E88F /* XANavigationController.m in Sources */,
 				CD4AAEC41CD8C8160057E88F /* XAElectricTypeViewController.m in Sources */,
+				B876D3591CE08EEF00115090 /* LeftSlideViewController.m in Sources */,
 				CD9FA47D1CD8DFED0000F197 /* XAVideoMonitoringViewController.m in Sources */,
 				CD69E0EE1CD88D8C0004960A /* XATabBarViewController.m in Sources */,
 			);

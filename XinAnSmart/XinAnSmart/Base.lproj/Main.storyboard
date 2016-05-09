@@ -40,7 +40,7 @@
         <scene sceneID="Zap-OV-1Qd">
             <objects>
                 <navigationController id="CW3-4S-psL" userLabel="电器类型" customClass="XANavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bottom_qjms.png" id="dPM-8w-Kli"/>
+                    <tabBarItem key="tabBarItem" title="" image="bottom_dqlx_on.png" selectedImage="bottom_dqlx.png" id="dPM-8w-Kli"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p6v-P1-pSW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -52,7 +52,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFA-3n-VTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664.5" y="-2414.5"/>
+            <point key="canvasLocation" x="-978.5" y="-2409.5"/>
         </scene>
         <!--视频监护-->
         <scene sceneID="ddM-19-Lce">
@@ -161,6 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.376031528" green="1" blue="0.19003173910000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="CW3-4S-psL" kind="relationship" relationship="viewControllers" id="YSN-a4-m8r"/>
@@ -174,7 +176,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bottom_qjms.png" width="40" height="40"/>
+        <image name="bottom_dqlx.png" width="40" height="40"/>
+        <image name="bottom_dqlx_on.png" width="40" height="40"/>
         <image name="bottom_spjk.png" width="40" height="40"/>
         <image name="bottom_video_on.png" width="40" height="40"/>
         <image name="splash.png" width="400" height="600"/>

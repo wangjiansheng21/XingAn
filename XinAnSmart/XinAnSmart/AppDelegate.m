@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "LeftSortsViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-       
+//    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    _leftVc=[XALeftSlideViewController new];
+//    self.window.rootViewController=_leftVc;
+    //[self.window makeKeyWindow];
     return YES;
 }
 

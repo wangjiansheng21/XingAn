@@ -6,9 +6,8 @@
 //  Copyright (c) 2015年 huangzhenyu. All rights reserved.
 
 #import "LeftSlideViewController.h"
-#import "XATabBarViewController.h"
-#import "XABaseViewController.h"
-#import "XANavigationController.h"
+
+
 @interface LeftSlideViewController ()<UIGestureRecognizerDelegate>
 {
     CGFloat _scalef;  //实时横向位移
@@ -38,55 +37,47 @@
 {
     if(self = [super init]){
         self.speedf = vSpeedFloat;
+        
         self.leftVC = leftVC;
         self.mainVC = mainVC;
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addPanGestureRecognizer:) name:@"AddPanGestureRecognizer" object:nil];
-        //滑动手势
-        self.pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
-        [self.mainVC.view addGestureRecognizer:self.pan];
+        [self addPanGestureRecognizer:nil];
+
         
-        [self.pan setCancelsTouchesInView:YES];
-        self.pan.delegate = self;
-        
-        self.leftVC.view.hidden = YES;
-        
-        [self.view addSubview:self.leftVC.view];
-        
-        //蒙版
-        UIView *view = [[UIView alloc] init];
-        view.frame = self.leftVC.view.bounds;
-        view.backgroundColor = [UIColor blackColor];
-        view.alpha = 0.5;
-        self.contentView = view;
-        [self.leftVC.view addSubview:view];
-        
-        //获取左侧tableview
-        for (UIView *obj in self.leftVC.view.subviews) {
-            if ([obj isKindOfClass:[UITableView class]]) {
-                self.leftTableview = (UITableView *)obj;
-            }
-        }
-        self.leftTableview.backgroundColor = [UIColor clearColor];
-        self.leftTableview.frame = CGRectMake(50, 0, kScreenWidth - kMainPageDistance, kScreenHeight);
-        //设置左侧tableview的初始位置和缩放系数
-        self.leftTableview.transform = CGAffineTransformMakeScale(kLeftScale, kLeftScale);
-        self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
-        
-        [self.view addSubview:self.mainVC.view];
-        self.closed = YES;//初始时侧滑窗关闭
     }
-        return self;
+    return self;
 }
-    
 -(void)addPanGestureRecognizer:(NSNotification *)notifi{
-    //为防止手势失效，二次添加手势
+    //滑动手势
     self.pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
     [self.mainVC.view addGestureRecognizer:self.pan];
     
     [self.pan setCancelsTouchesInView:YES];
     self.pan.delegate = self;
-
+    [self.view addSubview:self.leftVC.view];
+    
+    //蒙版
+    UIView *view = [[UIView alloc] init];
+    view.frame = self.leftVC.view.bounds;
+    //        view.backgroundColor = [UIColor blackColor];
+    view.alpha = 0.5;
+    self.contentView = view;
+    
+    
+    //获取左侧tableview
+    for (UIView *obj in self.leftVC.view.subviews) {
+        if ([obj isKindOfClass:[UITableView class]]) {
+            self.leftTableview = (UITableView *)obj;
+        }
+    }
+    self.leftTableview.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:self.mainVC.view];
+    self.closed = YES;//初始时侧滑窗关闭
+    
+    
+    
 }
+
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -129,15 +120,7 @@
         
         CGFloat leftTabCenterX = kLeftCenterX + ((kScreenWidth - kMainPageDistance) * 0.5 - kLeftCenterX) * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
 
-        NSLog(@"开始侧滑：%f",leftTabCenterX);
-        
-        
-        //leftScale kLeftScale~1.0
-        CGFloat leftScale = kLeftScale + (1 - kLeftScale) * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
-        
-        self.leftTableview.center = CGPointMake(leftTabCenterX, kScreenHeight * 0.5);
-        self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity, leftScale,leftScale);
-        
+        NSLog(@"%f",leftTabCenterX);
         //tempAlpha kLeftAlpha~0
         CGFloat tempAlpha = kLeftAlpha - kLeftAlpha * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         self.contentView.alpha = tempAlpha;
@@ -196,9 +179,6 @@
         tap.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
         tap.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2,[UIScreen mainScreen].bounds.size.height/2);
         self.closed = YES;
-        
-        self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
-        self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,kLeftScale,kLeftScale);
         self.contentView.alpha = kLeftAlpha;
         
         [UIView commitAnimations];
@@ -218,9 +198,6 @@
     self.mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
     self.mainVC.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
     self.closed = YES;
-    
-    self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
-    self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,kLeftScale,kLeftScale);
     self.contentView.alpha = kLeftAlpha;
     
     [UIView commitAnimations];
@@ -237,8 +214,8 @@
     self.mainVC.view.center = kMainPageCenter;
     self.closed = NO;
     
-    self.leftTableview.center = CGPointMake((kScreenWidth - kMainPageDistance) * 0.5, kScreenHeight * 0.5);
-    self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
+//    self.leftTableview.center = CGPointMake((kScreenWidth - kMainPageDistance) * 0.5, kScreenHeight * 0.5);
+//    self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
     self.contentView.alpha = 0;
     
     [UIView commitAnimations];

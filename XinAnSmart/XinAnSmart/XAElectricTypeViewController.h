@@ -7,6 +7,7 @@
 //
 
 #import "XABaseViewController.h"
-@interface XAElectricTypeViewController :XABaseViewController
+
+@interface XAElectricTypeViewController : XABaseViewController
 
 @end

@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "LeftSlideViewController.h"
+#import "XALeftSlideViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) LeftSlideViewController *leftSlideVC;
-
-
+@property(strong,nonatomic) XALeftSlideViewController *leftVc;
 @end
-
